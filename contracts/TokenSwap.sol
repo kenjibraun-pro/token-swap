@@ -11,11 +11,11 @@ contract TokenSwap {
     address payable admin;
     //ratioAX is the percentage of how much TokenA is worth of TokenX
     uint256 ratioAX;
-    bool AcheaperthenX;
-    uint256 fees;
+    bool AcheaperthenX;     
+    uint256 fees;   
     TokenABC public tokenABC;
     TokenXYZ public tokenXYZ;
-
+      
     constructor(address _tokenABC, address _tokenXYZ) {
         admin = payable(msg.sender);
         tokenABC = TokenABC(_tokenABC);
